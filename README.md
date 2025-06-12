@@ -96,7 +96,7 @@
 <h2>📦 Referensi</h2>
 <ul>
   <li><a href="https://github.com/prism-php/prism" target="_blank">PrismPHP GitHub</a></li>
-  <li><a href="https://docs.prismphp.dev" target="_blank">PrismPHP Documentation</a></li>
+  <li><a href="https://prismphp.com/getting-started/introduction.html" target="_blank">PrismPHP Documentation</a></li>
   <li><a href="https://console.groq.com/" target="_blank">Groq Console</a></li>
 </ul>
 
