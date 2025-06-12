@@ -26,7 +26,7 @@
 
 <ol>
   <li>Clone repositori ini:
-    <pre><code>git clone https://github.com/username/nama-repo-kamu.git</code></pre>
+    <pre><code>git clone https://github.com/yusufmg27/simple-chatbot.git</code></pre>
   </li>
   <li>Masuk ke folder proyek:
     <pre><code>cd nama-repo-kamu</code></pre>
