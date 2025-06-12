@@ -39,7 +39,8 @@ class ChatController extends Controller
 
         $chatHistory[] = ['role' => 'user', 'content' => $userMessage];
 
-        $conversationPrompt = '';
+        $conversationPrompt = "provide the answer in plain text only, without markdown formatting, symbols like *, **, numbered lists, or bullet points. make the response friendly by adding some emojis where appropriate to make it warmer and more engaging.\n";
+        
         foreach ($chatHistory as $msg) {
             $roleLabel = $msg['role'] === 'user' ? 'User' : 'Assistant';
             $conversationPrompt .= "{$roleLabel}: {$msg['content']}\n";
