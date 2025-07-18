@@ -198,6 +198,7 @@
         }
 
         .chat-input-area button:hover {
+            border: 2px solid var(--color-border);
             background-color: var(--color-button-hover-bg);
             color: var(--color-button-hover-text);
             border-radius: 0;
