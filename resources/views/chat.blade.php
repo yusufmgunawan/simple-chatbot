@@ -6,6 +6,7 @@
     <title>Simple Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --color-bg: #FFFFFF;
@@ -92,9 +93,27 @@
             margin-left: 12px;
         }
 
-        .header-right {
-            width: 45px;
-            height: 45px;
+        .dropdown-menu {
+            border: 2px solid var(--color-border);
+            box-shadow: 6px 6px 0 var(--color-shadow);
+            border-radius: 0;
+            background-color: var(--color-input-bg);
+            padding: 6px 6px;
+            min-width: 160px;
+        }
+
+        .dropdown-menu .dropdown-item {
+            padding: 10px 18px;
+            color: var(--color-text);
+            background-color: transparent;
+            border: 2px solid transparent;
+            font-weight: 700;
+            box-sizing: border-box;
+        }
+        
+        .dropdown-menu .dropdown-item:hover {
+            border-color: var(--color-border);
+            background-color: transparent;
         }
 
         .chat-messages {
@@ -205,7 +224,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container py-3">
         <div class="chat-container">
@@ -216,7 +234,15 @@
                     <img src="https://ui-avatars.com/api/?name=&background=ffffff&color=000000&size=64" alt="Profile Picture">
                     <span class="chat-header-title">Simple Chatbot</span>
                 </div>
-                <div class="header-right"></div>
+                <div class="header-right dropdown px-2">
+                    <button class="btn p-0 border-0 bg-transparent" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v" style="font-size: 20px;"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+                        <li><a class="dropdown-item" href="#" id="reset-btn">Reset</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/yusufmg27/simple-chatbot">About</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="chat-messages" id="chat-messages">
@@ -235,7 +261,7 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('chat-form').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -309,6 +335,11 @@
         });
 
         document.getElementById('user-input').focus();
+
+        document.getElementById('reset-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            location.reload();
+        });
     </script>
 </body>
 </html>
