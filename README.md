@@ -8,7 +8,7 @@
 
 <h2>🧠 Apa Itu PrismPHP?</h2>
 <p>
-  <a href="https://github.com/prism-php/prism" target="_blank">PrismPHP</a> adalah package PHP yang menyediakan antarmuka sederhana dan seragam untuk menggunakan berbagai model AI dari berbagai penyedia seperti OpenAI, Groq, Anthropic, Cohere, dan lainnya.
+  <a href="https://github.com/prism-php/prism" target="_blank">PrismPHP</a> adalah package Laravel yang menyediakan antarmuka sederhana dan seragam untuk menggunakan berbagai model AI dari berbagai penyedia seperti OpenAI, Groq, Anthropic, Cohere, dan lainnya.
 </p>
 
 <hr>
